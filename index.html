@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Eterno Photography — Fotografia de Família no Algarve</title>
+    <meta name="description" content="Fotografia profissional de família, gestantes e recém-nascidos no Algarve. Sessões ao ar livre com a luz dourada do sul de Portugal. Momentos eternos.">
+    <meta name="keywords" content="fotografia família algarve, fotografo recém-nascido olhão, ensaio gestante algarve, fotografia profissional portugal">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-click">Click</span><span class="logo-eterno">Eterno</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#portfolio" class="nav-link">Portfólio</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#testimonials" class="nav-link">Depoimentos</a>
+                <a href="#contact" class="nav-link nav-cta">Agendar Sessão</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="family.png" alt="Sessão fotográfica de família na praia do Algarve" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-tag">Fotografia de Família no Algarve</p>
+            <h1 class="hero-title">Momentos que<br><em>duram para sempre</em></h1>
+            <p class="hero-subtitle">Cada sorriso, cada abraço, cada olhar. Captamos a essência da sua família com a luz dourada do Algarve como cenário.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Agendar Sessão</a>
+                <a href="#portfolio" class="btn btn-ghost">Ver Portfólio</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img-wrapper img-1">
+                        <img src="newborn.png" alt="Fotografia de recém-nascido" loading="lazy">
+                    </div>
+                    <div class="about-img-wrapper img-2">
+                        <img src="maternity.png" alt="Ensaio gestante" loading="lazy">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="section-tag">Nossa História</p>
+                    <h2 class="section-title">Mais que fotos.<br><em>Memórias vivas.</em></h2>
+                    <p class="about-description">Somos Victor e sua esposa — um casal apaixonado por contar histórias através de imagens. Radicados no Algarve há 6 anos, encontramos nesta região o cenário perfeito: praias douradas, falésias dramáticas e uma luz que só existe aqui.</p>
+                    <p class="about-description">Cada sessão é uma experiência. Não posamos famílias — capturamos a vida como ela é: os risos, os abraços espontâneos, os olhares que dizem tudo. Porque os melhores momentos são os que acontecem naturalmente.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Famílias Fotografadas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="6">0</span>
+                            <span class="stat-label">Anos no Algarve</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                            <span class="stat-label">Satisfação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <p class="section-tag center">Portfólio</p>
+            <h2 class="section-title center">Histórias que<br><em>contamos com luz</em></h2>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="family">Família</button>
+                <button class="filter-btn" data-filter="newborn">Recém-Nascidos</button>
+                <button class="filter-btn" data-filter="maternity">Gestante</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                <div class="portfolio-item large" data-category="family">
+                    <img src="family.png" alt="Sessão família na praia" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Família</span>
+                        <h3>Família Silva — Praia da Marinha</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="newborn">
+                    <img src="newborn.png" alt="Ensaio recém-nascido" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Recém-Nascido</span>
+                        <h3>Baby Mateus — 7 dias</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="maternity">
+                    <img src="maternity.png" alt="Ensaio gestante" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Gestante</span>
+                        <h3>Ana — 34 semanas</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="family">
+                    <img src="maternity.png" alt="Sessão família externa" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Família</span>
+                        <h3>Família Costa — Olhão</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-category="newborn">
+                    <img src="newborn.png" alt="Ensaio newborn lifestyle" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Recém-Nascido</span>
+                        <h3>Baby Sofia — 12 dias</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="family">
+                    <img src="family.png" alt="Sessão de família ao pôr do sol" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Família</span>
+                        <h3>Família Rodrigues — Albufeira</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <p class="section-tag center">Serviços</p>
+            <h2 class="section-title center">Escolha a experiência<br><em>perfeita para si</em></h2>
+
+            <div class="services-grid">
+                <!-- Mini Session -->
+                <div class="service-card">
+                    <div class="service-icon">📸</div>
+                    <h3 class="service-name">Sessão Mini</h3>
+                    <p class="service-desc">Perfeita para famílias que querem uma recordação rápida e bonita no Algarve.</p>
+                    <ul class="service-features">
+                        <li>30 minutos de sessão</li>
+                        <li>1 locação ao ar livre</li>
+                        <li>15 fotos editadas em alta resolução</li>
+                        <li>Galeria online privada</li>
+                        <li>Entrega em 7 dias</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-value">€ 150</span>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">Quero Esta</a>
+                </div>
+
+                <!-- Classic Session -->
+                <div class="service-card featured">
+                    <div class="service-badge">Mais Popular</div>
+                    <div class="service-icon">✨</div>
+                    <h3 class="service-name">Sessão Clássica</h3>
+                    <p class="service-desc">A experiência completa. Tempo para relaxar, brincar e capturar a verdade da sua família.</p>
+                    <ul class="service-features">
+                        <li>1 hora de sessão</li>
+                        <li>Até 2 locações</li>
+                        <li>40 fotos editadas em alta resolução</li>
+                        <li>Galeria online privada</li>
+                        <li>5 prints artísticos 20x30</li>
+                        <li>Entrega em 10 dias</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-value">€ 300</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Quero Esta</a>
+                </div>
+
+                <!-- Premium Session -->
+                <div class="service-card">
+                    <div class="service-icon">👑</div>
+                    <h3 class="service-name">Sessão Premium</h3>
+                    <p class="service-desc">Para quem quer tudo. Uma experiência completa com vídeo, album e recordações físicas.</p>
+                    <ul class="service-features">
+                        <li>2 horas de sessão</li>
+                        <li>Múltiplas locações</li>
+                        <li>80+ fotos editadas em alta resolução</li>
+                        <li>Vídeo highlight 60 segundos</li>
+                        <li>Álbum fotográfico premium 30x30</li>
+                        <li>10 prints artísticos</li>
+                        <li>Entrega em 14 dias</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-value">€ 500</span>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">Quero Esta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <p class="section-tag center">Depoimentos</p>
+            <h2 class="section-title center">O que dizem<br><em>as nossas famílias</em></h2>
+
+            <div class="testimonials-slider" id="testimonialSlider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Nunca imaginei que fotos tão naturais pudessem ser tão bonitas. O Victor e a esposa têm um dom para captar momentos que passariam despercebidos. As nossas fotos de família são agora o nosso maior tesouro."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Maria Santos</span>
+                        <span class="author-detail">Sessão de Família — Albufeira</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"As fotos do nosso bebé ficaram absolutamente perfeitas. Cada detalhe, cada expressão. Chorei de emoção quando vi a galeria. Profissionais incríveis e super carinhosos com o nosso pequeno."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Ana & Pedro Correia</span>
+                        <span class="author-detail">Sessão Recém-Nascido — Olhão</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"O meu ensaio de gestante foi uma das melhores experiências da minha gravidez. Senti-me linda, confiante, e as fotos ficaram de revista. Recomendo de olhos fechados!"</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Carla Mendes</span>
+                        <span class="author-detail">Sessão Gestante — Faro</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots" id="testimonialDots">
+                <button class="dot active" data-index="0"></button>
+                <button class="dot" data-index="1"></button>
+                <button class="dot" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="cta-bg">
+            <img src="family.png" alt="" loading="lazy">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container cta-content">
+            <h2 class="cta-title">Pronto para eternizar<br>os seus momentos?</h2>
+            <p class="cta-text">Vagas limitadas por mês para garantir atenção exclusiva a cada família.</p>
+            <a href="#contact" class="btn btn-primary btn-large">Agendar Agora</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="section-tag">Contacto</p>
+                    <h2 class="section-title">Vamos criar algo<br><em>inesquecível</em></h2>
+                    <p class="contact-desc">Preencha o formulário e entraremos em contacto em até 24 horas para agendar a sua sessão.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Localização</strong>
+                                <p>Olhão, Algarve — Portugal</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>hello@clicketerno.pt</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <p>+351 910 003 203</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://instagram.com/clicketernophotography" target="_blank" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xreyrvbp" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="O seu nome" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Telefone / WhatsApp">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Que tipo de sessão procura?</option>
+                            <option value="mini">Sessão Mini — €150</option>
+                            <option value="classica">Sessão Clássica — €300</option>
+                            <option value="premium">Sessão Premium — €500</option>
+                            <option value="outro">Outro / Não tenho a certeza</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="date" name="date" placeholder="Data pretendida">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder="Conte-nos sobre a sessão que imagina..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        Enviar Pedido
+                    </button>
+                    <p class="form-note">Resposta garantida em 24 horas.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-click">Click</span><span class="logo-eterno">Eterno</span>
+                    <p>Fotografia de família no Algarve.<br>Momentos eternos, naturalmente capturados.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">Sobre</a>
+                    <a href="#portfolio">Portfólio</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Click Eterno Photography. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
