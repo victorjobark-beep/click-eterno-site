@@ -1055,9 +1055,17 @@ a {
 /* ======== RESPONSIVE ======== */
 @media (max-width: 968px) {
     .about-grid,
+    .photographer-grid,
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .photographer-img-wrapper {
+        max-width: 360px;
+        margin: 0 auto;
+        aspect-ratio: 4/5;
+        border-radius: 8px;
     }
 
     .about-images {
@@ -1131,6 +1139,12 @@ a {
 
     .hero-title {
         font-size: clamp(2.4rem, 8vw, 3.5rem);
+    }
+
+    .photographer-img-wrapper {
+        max-width: 300px;
+        aspect-ratio: 3/4;
+        border-radius: 6px;
     }
 
     .about-images {

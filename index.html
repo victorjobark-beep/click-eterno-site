@@ -34,7 +34,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="hero-bg">
-            <img src="family.png" alt="Sessão fotográfica de família na praia do Algarve" class="hero-img">
+            <img src="family.webp" alt="Sessão fotográfica de família na praia do Algarve" class="hero-img">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -57,7 +57,7 @@
         <div class="container">
             <div class="photographer-grid">
                 <div class="photographer-img-wrapper">
-                    <img src="Gessica.jpeg" alt="Gessica Rosa — Fotógrafa Click Eterno" loading="lazy">
+                    <img src="gessica.webp" alt="Gessica Rosa — Fotógrafa Click Eterno" loading="lazy">
                 </div>
                 <div class="about-text">
                     <p class="section-tag">A Fotógrafa</p>
@@ -91,52 +91,121 @@
             
             <div class="portfolio-filters">
                 <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="family">Família</button>
+                <button class="filter-btn" data-filter="casamento">Casamentos</button>
+                <button class="filter-btn" data-filter="gravidas">Grávidas</button>
                 <button class="filter-btn" data-filter="newborn">Recém-Nascidos</button>
-                <button class="filter-btn" data-filter="maternity">Gestante</button>
+                <button class="filter-btn" data-filter="infantis">Infantil</button>
+                <button class="filter-btn" data-filter="diadamae">Mães</button>
+                <button class="filter-btn" data-filter="natal">Natal</button>
+                <button class="filter-btn" data-filter="portrait">Retratos</button>
+                <button class="filter-btn" data-filter="aniversario">Eventos</button>
             </div>
 
             <div class="portfolio-grid" id="portfolioGrid">
-                <div class="portfolio-item large" data-category="family">
-                    <img src="family.png" alt="Sessão família na praia" loading="lazy">
+                <!-- Casamento -->
+                <div class="portfolio-item large" data-category="casamento">
+                    <img src="portfolio/casamento/casamento-1.webp" alt="Sessão de Casamento" loading="lazy">
                     <div class="portfolio-overlay">
-                        <span class="portfolio-cat">Família</span>
-                        <h3>Família Silva — Praia da Marinha</h3>
+                        <span class="portfolio-cat">Casamento</span>
+                        <h3>Amor Eterno</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="casamento">
+                    <img src="portfolio/casamento/casamento-2.webp" alt="Sessão de Casamento" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Casamento</span>
+                        <h3>O Grande Dia</h3>
+                    </div>
+                </div>
+                
+                <!-- Gravidas -->
+                <div class="portfolio-item tall" data-category="gravidas">
+                    <img src="portfolio/gravidas/gravidas-1.webp" alt="Ensaio Gestante" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Gestante</span>
+                        <h3>Doce Espera</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="gravidas">
+                    <img src="portfolio/gravidas/gravidas-3.webp" alt="Ensaio Gestante" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Gestante</span>
+                        <h3>Maternidade</h3>
+                    </div>
+                </div>
+
+                <!-- Newborn -->
+                <div class="portfolio-item" data-category="newborn">
+                    <img src="portfolio/newborn/newborn-1.webp" alt="Ensaio Recém-nascido" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Recém-Nascido</span>
+                        <h3>Primeiros Dias</h3>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="newborn">
-                    <img src="newborn.png" alt="Ensaio recém-nascido" loading="lazy">
+                    <img src="portfolio/newborn/newborn-3.webp" alt="Ensaio Recém-nascido" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Recém-Nascido</span>
-                        <h3>Baby Mateus — 7 dias</h3>
+                        <h3>Pura Ternura</h3>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="maternity">
-                    <img src="maternity.png" alt="Ensaio gestante" loading="lazy">
+
+                <!-- Infantis -->
+                <div class="portfolio-item large" data-category="infantis">
+                    <img src="portfolio/infantis/infantis-1.webp" alt="Ensaio Infantil" loading="lazy">
                     <div class="portfolio-overlay">
-                        <span class="portfolio-cat">Gestante</span>
-                        <h3>Ana — 34 semanas</h3>
+                        <span class="portfolio-cat">Infantil</span>
+                        <h3>Sorrisos</h3>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="family">
-                    <img src="maternity.png" alt="Sessão família externa" loading="lazy">
+                <div class="portfolio-item" data-category="infantis">
+                    <img src="portfolio/infantis/infantis-2.webp" alt="Ensaio Infantil" loading="lazy">
                     <div class="portfolio-overlay">
-                        <span class="portfolio-cat">Família</span>
-                        <h3>Família Costa — Olhão</h3>
+                        <span class="portfolio-cat">Infantil</span>
+                        <h3>Brincadeiras</h3>
                     </div>
                 </div>
-                <div class="portfolio-item tall" data-category="newborn">
-                    <img src="newborn.png" alt="Ensaio newborn lifestyle" loading="lazy">
+
+                <!-- Dia da Mae -->
+                <div class="portfolio-item" data-category="diadamae">
+                    <img src="portfolio/diadamae/diadamae-1.webp" alt="Dia da Mãe" loading="lazy">
                     <div class="portfolio-overlay">
-                        <span class="portfolio-cat">Recém-Nascido</span>
-                        <h3>Baby Sofia — 12 dias</h3>
+                        <span class="portfolio-cat">Mães</span>
+                        <h3>Amor de Mãe</h3>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="family">
-                    <img src="family.png" alt="Sessão de família ao pôr do sol" loading="lazy">
+                
+                <!-- Natal -->
+                <div class="portfolio-item tall" data-category="natal">
+                    <img src="portfolio/natal/natal-1.webp" alt="Ensaio de Natal" loading="lazy">
                     <div class="portfolio-overlay">
-                        <span class="portfolio-cat">Família</span>
-                        <h3>Família Rodrigues — Albufeira</h3>
+                        <span class="portfolio-cat">Natal</span>
+                        <h3>Magia do Natal</h3>
+                    </div>
+                </div>
+                
+                <!-- Portrait -->
+                <div class="portfolio-item" data-category="portrait">
+                    <img src="portfolio/portrait/portrait-2.webp" alt="Retrato" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Retratos</span>
+                        <h3>Essência</h3>
+                    </div>
+                </div>
+
+                <!-- Aniversário / Eventos -->
+                <div class="portfolio-item large" data-category="aniversario">
+                    <img src="portfolio/aniversario-festa-e-eventos/aniversario-festa-e-eventos-1.webp" alt="Festa de aniversário no Algarve" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Eventos</span>
+                        <h3>Momentos Especiais</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="aniversario">
+                    <img src="portfolio/aniversario-festa-e-eventos/aniversario-festa-e-eventos-2.webp" alt="Aniversário em família" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Eventos</span>
+                        <h3>Celebração</h3>
                     </div>
                 </div>
             </div>
@@ -254,7 +323,7 @@
     <!-- CTA Section -->
     <section class="section cta-section">
         <div class="cta-bg">
-            <img src="family.png" alt="" loading="lazy">
+            <img src="family.webp" alt="" loading="lazy">
             <div class="cta-overlay"></div>
         </div>
         <div class="container cta-content">
@@ -348,7 +417,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="Logo.PNG" alt="Click Eterno Photography" class="footer-logo">
+                    <img src="logo.webp" alt="Click Eterno Photography" class="footer-logo">
                     <p>Fotografia de família no Algarve.<br>Momentos eternos, naturalmente capturados.</p>
                 </div>
                 <div class="footer-links">
