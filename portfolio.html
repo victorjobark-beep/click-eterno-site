@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio — Click Eterno Photography Algarve</title>
+    <meta name="description" content="Portfólio completo de fotografia profissional no Algarve: casamentos, gestantes, recém-nascidos, infantil, Natal e eventos. Gessica Rosa fotógrafa em Olhão.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-click">Click</span><span class="logo-eterno">Eterno</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#about" class="nav-link">Sobre</a>
+                <a href="portfolio.html" class="nav-link active">Portfólio</a>
+                <a href="index.html#services" class="nav-link">Serviços</a>
+                <a href="index.html#testimonials" class="nav-link">Depoimentos</a>
+                <a href="index.html#contact" class="nav-link nav-cta">Agendar Sessão</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <div class="portfolio-page-header">
+        <div class="container">
+            <p class="section-tag center">Trabalhos</p>
+            <h1 class="section-title center">Portfólio<br><em>completo</em></h1>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio portfolio-page">
+        <div class="container">
+            <div class="portfolio-filters" id="portfolioFilters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Preenchido por portfolio.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="cta-bg">
+            <img src="portfolio/natal/natal-5.webp" alt="Sessão fotográfica de Natal em família no Algarve" loading="lazy">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container cta-content">
+            <h2 class="cta-title">Gostou do que viu?</h2>
+            <p class="cta-text">Vagas limitadas por mês para garantir atenção exclusiva a cada família.</p>
+            <a href="index.html#contact" class="btn btn-primary btn-large">Agendar Sessão</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.webp" alt="Click Eterno Photography — Fotografia de Família no Algarve" class="footer-logo">
+                    <p>Fotografia de família no Algarve.<br>Momentos eternos, naturalmente capturados.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">Sobre</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="index.html#services">Serviços</a>
+                    <a href="index.html#contact">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Click Eterno Photography. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Visualizador de fotografia" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">&#10005;</button>
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">&#8592;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+        </div>
+        <button class="lightbox-next" id="lightboxNext" aria-label="Próxima foto">&#8594;</button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <script src="photos.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>

@@ -1183,6 +1183,23 @@ a {
 }
 
 /* ======================================
+   Portfolio Page
+   ====================================== */
+.portfolio-page-header {
+    padding: 140px 0 40px;
+    text-align: center;
+}
+
+.portfolio-page .portfolio-filters {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-link.active {
+    color: var(--color-accent);
+}
+
+/* ======================================
    Categories Carousel
    ====================================== */
 .categories-section {
