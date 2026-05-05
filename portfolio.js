@@ -35,21 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
         filtersEl.appendChild(btn);
     });
 
-    // Create grid items — varied sizes for visual rhythm
-    const sizePattern = ['', 'tall', '', 'large', '', '', 'tall', '', '', 'large', '', ''];
-    let globalIndex = 0;
-
     PHOTO_DATA.forEach(cat => {
         const folder = cat.category === 'aniversario'
             ? 'aniversario-festa-e-eventos'
             : cat.category;
 
         cat.photos.forEach(photo => {
-            const sizeClass = sizePattern[globalIndex % sizePattern.length];
-            globalIndex++;
-
             const item = document.createElement('div');
-            item.className = `portfolio-item${sizeClass ? ' ' + sizeClass : ''}`;
+            item.className = 'portfolio-item';
             item.setAttribute('data-category', cat.category);
 
             item.innerHTML = `
