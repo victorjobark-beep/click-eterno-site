@@ -34,7 +34,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="hero-bg">
-            <img src="family.webp" alt="Sessão fotográfica de família na praia do Algarve" class="hero-img">
+            <img src="portfolio/casamento/casamento-1.webp" alt="Fotografia de casamento profissional no Algarve — Click Eterno Photography" class="hero-img">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -52,34 +52,49 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
+    <!-- Categories Carousel -->
+    <section class="section categories-section">
         <div class="container">
-            <div class="photographer-grid">
-                <div class="photographer-img-wrapper">
-                    <img src="gessica.webp" alt="Gessica Rosa — Fotógrafa Click Eterno" loading="lazy">
+            <p class="section-tag center">Especialidades</p>
+            <h2 class="section-title center">O que<br><em>fotografamos</em></h2>
+        </div>
+        <div class="carousel-wrapper">
+            <button class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Anterior">&#8592;</button>
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-item" data-goto="casamento">
+                    <img src="portfolio/casamento/casamento-3.webp" alt="Fotografia de casamento no Algarve" loading="lazy">
+                    <div class="carousel-label">Casamentos</div>
                 </div>
-                <div class="about-text">
-                    <p class="section-tag">A Fotógrafa</p>
-                    <h2 class="section-title">Olá, sou<br><em>Gessica Rosa</em></h2>
-                    <p class="about-description">Mãe de um casal e completamente apaixonada por registar os momentos mágicos e especiais em família. Sei o quanto estes instantes passam rápido — e é por isso que dedico o meu trabalho a eternizá-los com cuidado, sensibilidade e amor.</p>
-                    <p class="about-description">Radicada no Algarve, encontrei nesta região o cenário perfeito: praias douradas, falésias dramáticas e uma luz única que só existe aqui. Cada sessão é uma experiência — não posamos famílias, capturamos a vida como ela é.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
-                            <span class="stat-label">Famílias Fotografadas</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-target="6">0</span>
-                            <span class="stat-label">Anos no Algarve</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
-                            <span class="stat-label">Satisfação</span>
-                        </div>
-                    </div>
+                <div class="carousel-item" data-goto="gravidas">
+                    <img src="portfolio/gravidas/gravidas-1.webp" alt="Ensaio fotográfico de gestante no Algarve" loading="lazy">
+                    <div class="carousel-label">Grávidas</div>
+                </div>
+                <div class="carousel-item" data-goto="newborn">
+                    <img src="portfolio/newborn/newborn-1.webp" alt="Ensaio fotográfico de recém-nascido em Olhão" loading="lazy">
+                    <div class="carousel-label">Recém-Nascidos</div>
+                </div>
+                <div class="carousel-item" data-goto="infantis">
+                    <img src="portfolio/infantis/infantis-1.webp" alt="Sessão fotográfica infantil no Algarve" loading="lazy">
+                    <div class="carousel-label">Infantil</div>
+                </div>
+                <div class="carousel-item" data-goto="diadamae">
+                    <img src="portfolio/diadamae/diadamae-1.webp" alt="Ensaio fotográfico Dia da Mãe no Algarve" loading="lazy">
+                    <div class="carousel-label">Dia da Mãe</div>
+                </div>
+                <div class="carousel-item" data-goto="natal">
+                    <img src="portfolio/natal/natal-2.webp" alt="Ensaio fotográfico de Natal em família no Algarve" loading="lazy">
+                    <div class="carousel-label">Natal</div>
+                </div>
+                <div class="carousel-item" data-goto="portrait">
+                    <img src="portfolio/portrait/portrait-3.webp" alt="Sessão de retratos artísticos em Olhão, Algarve" loading="lazy">
+                    <div class="carousel-label">Retratos</div>
+                </div>
+                <div class="carousel-item" data-goto="aniversario">
+                    <img src="portfolio/aniversario-festa-e-eventos/aniversario-festa-e-eventos-3.webp" alt="Fotografia de festas e aniversários no Algarve" loading="lazy">
+                    <div class="carousel-label">Eventos</div>
                 </div>
             </div>
+            <button class="carousel-arrow carousel-next" id="carouselNext" aria-label="Próximo">&#8594;</button>
         </div>
     </section>
 
@@ -88,7 +103,7 @@
         <div class="container">
             <p class="section-tag center">Portfólio</p>
             <h2 class="section-title center">Histórias que<br><em>contamos com luz</em></h2>
-            
+
             <div class="portfolio-filters">
                 <button class="filter-btn active" data-filter="all">Todos</button>
                 <button class="filter-btn" data-filter="casamento">Casamentos</button>
@@ -104,108 +119,185 @@
             <div class="portfolio-grid" id="portfolioGrid">
                 <!-- Casamento -->
                 <div class="portfolio-item large" data-category="casamento">
-                    <img src="portfolio/casamento/casamento-1.webp" alt="Sessão de Casamento" loading="lazy">
+                    <img src="portfolio/casamento/casamento-1.webp" alt="Fotografia de casamento profissional no Algarve" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Casamento</span>
                         <h3>Amor Eterno</h3>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="casamento">
-                    <img src="portfolio/casamento/casamento-2.webp" alt="Sessão de Casamento" loading="lazy">
+                    <img src="portfolio/casamento/casamento-2.webp" alt="Casal no dia do casamento no Algarve" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Casamento</span>
                         <h3>O Grande Dia</h3>
                     </div>
                 </div>
-                
+                <div class="portfolio-item" data-category="casamento">
+                    <img src="portfolio/casamento/casamento-4.webp" alt="Sessão fotográfica de casamento na praia do Algarve" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Casamento</span>
+                        <h3>Para Sempre</h3>
+                    </div>
+                </div>
+
                 <!-- Gravidas -->
                 <div class="portfolio-item tall" data-category="gravidas">
-                    <img src="portfolio/gravidas/gravidas-1.webp" alt="Ensaio Gestante" loading="lazy">
+                    <img src="portfolio/gravidas/gravidas-1.webp" alt="Ensaio fotográfico de gestante ao ar livre no Algarve" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Gestante</span>
                         <h3>Doce Espera</h3>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="gravidas">
-                    <img src="portfolio/gravidas/gravidas-3.webp" alt="Ensaio Gestante" loading="lazy">
+                    <img src="portfolio/gravidas/gravidas-3.webp" alt="Sessão de maternidade com luz natural no Algarve" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Gestante</span>
                         <h3>Maternidade</h3>
                     </div>
                 </div>
+                <div class="portfolio-item" data-category="gravidas">
+                    <img src="portfolio/gravidas/gravidas-5.webp" alt="Fotografia de grávida nas praias do Algarve" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Gestante</span>
+                        <h3>Nova Vida</h3>
+                    </div>
+                </div>
 
                 <!-- Newborn -->
                 <div class="portfolio-item" data-category="newborn">
-                    <img src="portfolio/newborn/newborn-1.webp" alt="Ensaio Recém-nascido" loading="lazy">
+                    <img src="portfolio/newborn/newborn-1.webp" alt="Ensaio fotográfico de recém-nascido em Olhão, Algarve" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Recém-Nascido</span>
                         <h3>Primeiros Dias</h3>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="newborn">
-                    <img src="portfolio/newborn/newborn-3.webp" alt="Ensaio Recém-nascido" loading="lazy">
+                    <img src="portfolio/newborn/newborn-3.webp" alt="Fotografia newborn profissional com 7 dias de vida" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Recém-Nascido</span>
                         <h3>Pura Ternura</h3>
                     </div>
                 </div>
+                <div class="portfolio-item" data-category="newborn">
+                    <img src="portfolio/newborn/newborn-5.webp" alt="Sessão de recém-nascido em ambiente natural no Algarve" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Recém-Nascido</span>
+                        <h3>Pequeno Milagre</h3>
+                    </div>
+                </div>
 
                 <!-- Infantis -->
                 <div class="portfolio-item large" data-category="infantis">
-                    <img src="portfolio/infantis/infantis-1.webp" alt="Ensaio Infantil" loading="lazy">
+                    <img src="portfolio/infantis/infantis-1.webp" alt="Sessão fotográfica infantil ao ar livre no Algarve" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Infantil</span>
                         <h3>Sorrisos</h3>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="infantis">
-                    <img src="portfolio/infantis/infantis-2.webp" alt="Ensaio Infantil" loading="lazy">
+                    <img src="portfolio/infantis/infantis-2.webp" alt="Fotografia infantil na praia do Algarve" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Infantil</span>
                         <h3>Brincadeiras</h3>
                     </div>
                 </div>
+                <div class="portfolio-item" data-category="infantis">
+                    <img src="portfolio/infantis/infantis-4.webp" alt="Ensaio fotográfico infantil com luz dourada do Algarve" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Infantil</span>
+                        <h3>Inocência</h3>
+                    </div>
+                </div>
 
                 <!-- Dia da Mae -->
                 <div class="portfolio-item" data-category="diadamae">
-                    <img src="portfolio/diadamae/diadamae-1.webp" alt="Dia da Mãe" loading="lazy">
+                    <img src="portfolio/diadamae/diadamae-1.webp" alt="Ensaio fotográfico especial Dia da Mãe no Algarve" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Mães</span>
                         <h3>Amor de Mãe</h3>
                     </div>
                 </div>
-                
+                <div class="portfolio-item tall" data-category="diadamae">
+                    <img src="portfolio/diadamae/diadamae-2.webp" alt="Sessão fotográfica mãe e filhos no Algarve" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Mães</span>
+                        <h3>Laço Eterno</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="diadamae">
+                    <img src="portfolio/diadamae/diadamae-3.webp" alt="Fotografia de Dia da Mãe com luz natural em Portugal" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Mães</span>
+                        <h3>Cumplicidade</h3>
+                    </div>
+                </div>
+
                 <!-- Natal -->
-                <div class="portfolio-item tall" data-category="natal">
-                    <img src="portfolio/natal/natal-1.webp" alt="Ensaio de Natal" loading="lazy">
+                <div class="portfolio-item" data-category="natal">
+                    <img src="portfolio/natal/natal-1.webp" alt="Ensaio fotográfico de Natal em família no Algarve" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Natal</span>
                         <h3>Magia do Natal</h3>
                     </div>
                 </div>
-                
+                <div class="portfolio-item large" data-category="natal">
+                    <img src="portfolio/natal/natal-3.webp" alt="Sessão natalícia profissional com ambiente aconchegante" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Natal</span>
+                        <h3>Tradição</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="natal">
+                    <img src="portfolio/natal/natal-5.webp" alt="Fotografia de Natal em família com decoração festiva" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Natal</span>
+                        <h3>Memórias de Dezembro</h3>
+                    </div>
+                </div>
+
                 <!-- Portrait -->
                 <div class="portfolio-item" data-category="portrait">
-                    <img src="portfolio/portrait/portrait-2.webp" alt="Retrato" loading="lazy">
+                    <img src="portfolio/portrait/portrait-2.webp" alt="Retrato profissional com luz natural em Olhão, Algarve" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Retratos</span>
                         <h3>Essência</h3>
                     </div>
                 </div>
+                <div class="portfolio-item" data-category="portrait">
+                    <img src="portfolio/portrait/portrait-4.webp" alt="Sessão de retratos artísticos ao ar livre em Portugal" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Retratos</span>
+                        <h3>Identidade</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portrait">
+                    <img src="portfolio/portrait/portrait-6.webp" alt="Fotografia de retrato com expressão e personalidade" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Retratos</span>
+                        <h3>Presença</h3>
+                    </div>
+                </div>
 
                 <!-- Aniversário / Eventos -->
                 <div class="portfolio-item large" data-category="aniversario">
-                    <img src="portfolio/aniversario-festa-e-eventos/aniversario-festa-e-eventos-1.webp" alt="Festa de aniversário no Algarve" loading="lazy">
+                    <img src="portfolio/aniversario-festa-e-eventos/aniversario-festa-e-eventos-1.webp" alt="Fotografia de festa de aniversário no Algarve" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Eventos</span>
                         <h3>Momentos Especiais</h3>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="aniversario">
-                    <img src="portfolio/aniversario-festa-e-eventos/aniversario-festa-e-eventos-2.webp" alt="Aniversário em família" loading="lazy">
+                    <img src="portfolio/aniversario-festa-e-eventos/aniversario-festa-e-eventos-2.webp" alt="Registo fotográfico de aniversário em família" loading="lazy">
                     <div class="portfolio-overlay">
                         <span class="portfolio-cat">Eventos</span>
                         <h3>Celebração</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="aniversario">
+                    <img src="portfolio/aniversario-festa-e-eventos/aniversario-festa-e-eventos-4.webp" alt="Fotografia profissional de eventos e festas no Algarve" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Eventos</span>
+                        <h3>Alegria</h3>
                     </div>
                 </div>
             </div>
@@ -280,6 +372,37 @@
         </div>
     </section>
 
+    <!-- About / Gessica Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="photographer-grid">
+                <div class="photographer-img-wrapper">
+                    <img src="gessica.webp" alt="Gessica Rosa — Fotógrafa profissional da Click Eterno Photography no Algarve" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p class="section-tag">A Fotógrafa</p>
+                    <h2 class="section-title">Olá, sou<br><em>Gessica Rosa</em></h2>
+                    <p class="about-description">Mãe de um casal e completamente apaixonada por registar os momentos mágicos e especiais em família. Sei o quanto estes instantes passam rápido — e é por isso que dedico o meu trabalho a eternizá-los com cuidado, sensibilidade e amor.</p>
+                    <p class="about-description">Radicada no Algarve, encontrei nesta região o cenário perfeito: praias douradas, falésias dramáticas e uma luz única que só existe aqui. Cada sessão é uma experiência — não posamos famílias, capturamos a vida como ela é.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Famílias Fotografadas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="6">0</span>
+                            <span class="stat-label">Anos no Algarve</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                            <span class="stat-label">Satisfação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Testimonials -->
     <section id="testimonials" class="section testimonials">
         <div class="container">
@@ -289,7 +412,7 @@
             <div class="testimonials-slider" id="testimonialSlider">
                 <div class="testimonial-card active">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Nunca imaginei que fotos tão naturais pudessem ser tão bonitas. O Victor e a esposa têm um dom para captar momentos que passariam despercebidos. As nossas fotos de família são agora o nosso maior tesouro."</p>
+                    <p class="testimonial-text">"Nunca imaginei que fotos tão naturais pudessem ser tão bonitas. A Gessica tem um dom para captar momentos que passariam despercebidos. As nossas fotos de família são agora o nosso maior tesouro."</p>
                     <div class="testimonial-author">
                         <span class="author-name">Maria Santos</span>
                         <span class="author-detail">Sessão de Família — Albufeira</span>
@@ -297,7 +420,7 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"As fotos do nosso bebé ficaram absolutamente perfeitas. Cada detalhe, cada expressão. Chorei de emoção quando vi a galeria. Profissionais incríveis e super carinhosos com o nosso pequeno."</p>
+                    <p class="testimonial-text">"As fotos do nosso bebé ficaram absolutamente perfeitas. Cada detalhe, cada expressão. Chorei de emoção quando vi a galeria. Profissional incrível e super carinhosa com o nosso pequeno."</p>
                     <div class="testimonial-author">
                         <span class="author-name">Ana & Pedro Correia</span>
                         <span class="author-detail">Sessão Recém-Nascido — Olhão</span>
@@ -323,7 +446,7 @@
     <!-- CTA Section -->
     <section class="section cta-section">
         <div class="cta-bg">
-            <img src="family.webp" alt="" loading="lazy">
+            <img src="portfolio/natal/natal-5.webp" alt="Sessão fotográfica de Natal em família no Algarve" loading="lazy">
             <div class="cta-overlay"></div>
         </div>
         <div class="container cta-content">
@@ -341,7 +464,7 @@
                     <p class="section-tag">Contacto</p>
                     <h2 class="section-title">Vamos criar algo<br><em>inesquecível</em></h2>
                     <p class="contact-desc">Preencha o formulário e entraremos em contacto em até 24 horas para agendar a sua sessão.</p>
-                    
+
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="contact-icon">📍</span>
@@ -367,10 +490,10 @@
                     </div>
 
                     <div class="contact-social">
-                        <a href="https://instagram.com/clicketernophotography" target="_blank" class="social-link" aria-label="Instagram">
+                        <a href="https://instagram.com/clicketernophotography" target="_blank" class="social-link" aria-label="Instagram Click Eterno Photography">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="Facebook">
+                        <a href="#" class="social-link" aria-label="Facebook Click Eterno Photography">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                         </a>
                     </div>
@@ -417,7 +540,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="logo.webp" alt="Click Eterno Photography" class="footer-logo">
+                    <img src="logo.webp" alt="Click Eterno Photography — Fotografia de Família no Algarve" class="footer-logo">
                     <p>Fotografia de família no Algarve.<br>Momentos eternos, naturalmente capturados.</p>
                 </div>
                 <div class="footer-links">
@@ -432,6 +555,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Visualizador de fotografia" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">&#10005;</button>
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">&#8592;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+        </div>
+        <button class="lightbox-next" id="lightboxNext" aria-label="Próxima foto">&#8594;</button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
